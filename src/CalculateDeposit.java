@@ -9,7 +9,7 @@ public class CalculateDeposit {
         return Math.round(amount + amount * 0.06 * depositPeriodInYear);
     }
 
-    void percentManager() {
+    void runPercentManager() {
         int period;
         int action;
         int amount;
@@ -33,6 +33,6 @@ public class CalculateDeposit {
     }
 
     public static void main(String[] args) {
-        new CalculateDeposit().percentManager();
+        new CalculateDeposit().runPercentManager();
     }
 }

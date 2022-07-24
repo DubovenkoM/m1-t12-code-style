@@ -5,7 +5,7 @@ public class CalculateDeposit {
         return Math.round(amount * Math.pow((1 + 0.06 / 12), 12 * depositPeriodInYear));
     }
 
-    double calculateSimplePercent(double amount,  int depositPeriodInYear) {
+    double calculateSimplePercent(double amount, int depositPeriodInYear) {
         return Math.round(amount + amount * 0.06 * depositPeriodInYear);
     }
 
@@ -25,13 +25,13 @@ public class CalculateDeposit {
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         action = scanner.nextInt();
 
-        if (action ==1)
+        if (action == 1)
             totalSum = calculateSimplePercent(amount, period);
         else if (action == 2)
             totalSum = calculateComplexPercent(amount, period);
         System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + totalSum);
     }
-    
+
     public static void main(String[] args) {
         new CalculateDeposit().percentManager();
     }

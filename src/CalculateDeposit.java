@@ -1,4 +1,6 @@
 import java.util.Scanner;
+//Отличное решение с удалением не нужного метода.
+//Земечаний по коду нет.
 
 public class CalculateDeposit {
     double calculateComplexPercent(double amount, int depositPeriodInYear) {
